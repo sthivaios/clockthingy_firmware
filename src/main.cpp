@@ -22,7 +22,7 @@ void setup() {
         while (1) delay(10);
     }
 
-    xTaskCreate(SerialPrintDate, "SerialPrintDate", 8192, nullptr, 5, &SerialPrintDateTaskHandle);
+    xTaskCreate(SerialPrintDate, "SerialPrintDate", 4096, nullptr, 5, &SerialPrintDateTaskHandle);
 }
 
 void loop() {
